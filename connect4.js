@@ -25,6 +25,7 @@ function makeBoard() {
     
     // board.push(Array.from({ length: WIDTH }));
   };
+  // return board;
 };
 
 /** makeHtmlBoard: make HTML table and row of column tops. */
@@ -91,7 +92,7 @@ function placeInTable(y, x) {
   // piece.style.top = -50 * (y + 2);
 
   const targetCell = document.getElementById(`${y}-${x}`);
-  console.log(targetCell); 
+  // console.log(targetCell); 
   targetCell.append(piece);
 }
 
